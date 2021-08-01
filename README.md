@@ -24,4 +24,12 @@ This repository includes the code samples used in my KCDC Java 17 presentation a
 3. Write a method that returns the same data however uses a switch expression and is as short as possible.
 4. Add yield to both of these methods in any case/default.
 5. Write a method that takes an object and returns the same as the prior methods if the parameter is your enum. Otherwise, have it return -1.
-6. Write a method that behaves the same as the previous method. However, negate your if statement to see different behavior. 
+6. Write a method that behaves the same as the previous method. However, negate your if statement to see different behavior.
+
+# Module 3
+1. Create a record named Weekday that takes in a String for the day of the week. Call it from a main method that prints the day using the getter and also using toString().
+2. Customize the getter so it formats the result as "Day: Monday"
+3. Add a compact constructor to the method that throws an exception if a weekend is passed in
+4. Create a sealed interface called AnyDay and have your existing record be the sole implementer.
+5. Create a non-sealed implmentation called Weekend to implement AnyDay
+6. Try making your sealed interface, a sealed class. What goes wrong?
