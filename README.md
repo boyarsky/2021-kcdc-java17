@@ -33,3 +33,15 @@ This repository includes the code samples used in my KCDC Java 17 presentation a
 4. Create a sealed interface called AnyDay and have your existing record be the sole implementer.
 5. Create a non-sealed implmentation called Weekend to implement AnyDay
 6. Try making your sealed interface, a sealed class. What goes wrong?
+
+# Module 4
+1. Create a class with a method that takes a String and returns a Stream<String> of 0 elements (if null) and 1 element (if not null)
+2. Write a stream that counts down from 10 to 1. Use this stream to print a countdown followed by “blast off”
+3. Write a stream that counts odd numbers starting with 1. Print out the 40th element of the stream.
+4. Create a method that takes a varargs of strings. Print all the words until you get to one that is six characters or more. (Do not print the six character word.)
+5. Create a method that takes a varargs of strings. This time print the first word that is six characters or more followed by the next three words of any length.
+6. Implement the method below so that it returns a record with the unique elements that start with a specific letter along with the total (non-unique count of matches). For this question, you can exclusively use method chaining. Only one semicolon is allowed in the method implementation.
+```
+ System.out.println(getPageOfData('a', "apple", "apple", "strawberry", "chocolate"));
+ // outputs Page[set=[apple], count=2]
+```
