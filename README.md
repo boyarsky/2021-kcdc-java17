@@ -45,3 +45,11 @@ This repository includes the code samples used in my KCDC Java 17 presentation a
  System.out.println(getPageOfData('a', "apple", "apple", "strawberry", "chocolate"));
  // outputs Page[set=[apple], count=2]
 ```
+
+# Module 5
+1. Create a property file (resource bundle) named kcdc_en.properties with a single property named location and a value of "Kansas City".
+2. Create another property file named kcdc.properties with the name numDays and a value of "{0}"
+3. Create a driver program that contains Locale.setDefault(Locale.JAPANESE) and prints "3 days in Kansas City". Use a MessageFormat and appropriate locale to get this output. Be sure to use String.formatted() and not string concatentation.
+4. Create a local date and print it using DateTimeFormatter in three different formats. Try using "m" in the format string. What happens?
+5. Print the numbers from 1 to 100 one per line so the numbers are left aligned.
+6. Write a program that takes the number 5 million and prints it as many ways as you can think of.

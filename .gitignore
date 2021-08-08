@@ -1,5 +1,6 @@
 *.tmp
 **/*.class
+out
 
 # module output directory
 mods
