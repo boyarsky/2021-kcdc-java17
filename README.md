@@ -1,5 +1,7 @@
 This repository includes the code samples used in my KCDC Java 17 presentation along with the lab solutions. The lab assignment is as follows.
 
+Note that you are allowed to use Google or the Java 17 JavaDoc for any of these. You are not expected to have memorized the methods from the presentation. 
+
 # Module 1
 
 1. Use a text block to print a tic tac toe grid that looks something like this:
@@ -53,3 +55,14 @@ This repository includes the code samples used in my KCDC Java 17 presentation a
 4. Create a local date and print it using DateTimeFormatter in three different formats. Try using "m" in the format string. What happens?
 5. Print the numbers from 1 to 100 one per line so the numbers are left aligned.
 6. Write a program that takes the number 5 million and prints it as many ways as you can think of.
+
+# Module 6
+1. Create five path objects in the same directory; each a different way. (use relative, resolve and normalize at least once). Print the noramlized absolute path to make sure they are in the same directory:
+```
+System.out.println(path1.toAbsolutePath().normalize());
+```
+2. Write a method that calls Files.deleteIfExists(). Your method may not throw a checked exception.
+3. Write the text of your choice to each of these files (again a different way). Make sure each file has different text. 
+4. Read each file and print the value a different way for each file
+5. Call mismatch() on two of your files. Does it return what you expect?
+6. Call Files.walk() on the parent directory with your files and print out all the file names. Add a subdirectory (manually is fine). Does the output change?
