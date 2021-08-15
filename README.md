@@ -66,3 +66,11 @@ System.out.println(path1.toAbsolutePath().normalize());
 4. Read each file and print the value a different way for each file
 5. Call mismatch() on two of your files. Does it return what you expect?
 6. Call Files.walk() on the parent directory with your files and print out all the file names. Add a subdirectory (manually is fine). Does the output change?
+
+# Module 7
+1. Follow https://github.com/boyarsky/sybex-1Z0-815-chapter-11 until you get to the Discovering Modules section (we aren't covering that today)
+2. Comment out the exports directive in zoo.animal.feeding. Recompile/repackage it. Now try to recompile the care module. What error do you get? Rollback your change so it works again.
+3. Comment out the requires directive in zoo.animal.care. Try to recompile it. What error did you get? Rollback your change so it works again.
+4. Add an exports directive for a package that doesn't exist. What happens. Rollback your change so it works again.
+5. Add a requires directive for a module that doesn't exist. What happens. Rollback your change so it works again.
+6. Add a requires zoo.animal.care; statement to the feeding module. Try to recompile it. What error do you get?
